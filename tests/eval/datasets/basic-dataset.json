@@ -1,0 +1,32 @@
+{
+  "eval_cases": [
+    {
+      "eval_case_id": "concierge_greeting",
+      "prompt": {
+        "role": "user",
+        "parts": [{"text": "Hello! What can VoyagerAI help me plan?"}]
+      }
+    },
+    {
+      "eval_case_id": "budget_trip_planning",
+      "prompt": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "Plan a 5-night trip from SFO to Tokyo from 2026-10-10 to 2026-10-15 under $2400."
+          }
+        ]
+      },
+      "reference": {
+        "response": {
+          "role": "model",
+          "parts": [
+            {
+              "text": "Includes verified flight and hotel options, seasonal advisory notes, and an itemized total under $2,400."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
